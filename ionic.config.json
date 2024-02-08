@@ -1,0 +1,7 @@
+{
+  "name": "ios-textarea-on-modal-bug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
