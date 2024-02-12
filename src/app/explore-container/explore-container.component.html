@@ -1,12 +1,22 @@
-<div id="container">
-  <strong>{{ name }}</strong>
-  <p>
-    Explore
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://ionicframework.com/docs/components"
-      >UI Components</a
-    >
-  </p>
-</div>
+<strong>{{ name }}</strong>
+
+<ion-button expand="block" id="openModalButton" color="primary">
+  Open Modal
+</ion-button>
+
+<ion-modal
+  trigger="openModalButton"
+  [initialBreakpoint]="1"
+  [breakpoints]="[0, 1]"
+>
+  <ng-template>
+    <div class="ion-margin">
+      <ion-textarea
+        value="edit this"
+        rows="5"
+        label="Textarea"
+        labelPlacement="stacked"
+      ></ion-textarea>
+    </div>
+  </ng-template>
+</ion-modal>
